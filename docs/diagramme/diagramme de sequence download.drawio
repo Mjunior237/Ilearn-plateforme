@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="ZQSK5smV8vb4IqwIp39k">
+    <mxGraphModel dx="1290" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-1" value="Étudiant" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-2" value="Frontend" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-3" value="Backend" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-4" value="Database" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-5" value="File System" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-6" value="1. Clique sur ressource" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-1" target="qWzAWqNzru6TFeiAN5Tm-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-7" value="2. GET /api/resources/:id" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-2" target="qWzAWqNzru6TFeiAN5Tm-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-8" value="3. SELECT * FROM resources" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-3" target="qWzAWqNzru6TFeiAN5Tm-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-9" value="4. Retourne ressource" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-4" target="qWzAWqNzru6TFeiAN5Tm-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="80" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-10" value="5. UPDATE viewsCount +1" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-3" target="qWzAWqNzru6TFeiAN5Tm-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="100" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-11" value="6. Lit fichier" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-3" target="qWzAWqNzru6TFeiAN5Tm-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-12" value="7. Retourne stream" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-5" target="qWzAWqNzru6TFeiAN5Tm-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="140" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-13" value="8. Envoie fichier" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-3" target="qWzAWqNzru6TFeiAN5Tm-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="160" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWzAWqNzru6TFeiAN5Tm-14" value="9. Téléchargement" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="qWzAWqNzru6TFeiAN5Tm-2" target="qWzAWqNzru6TFeiAN5Tm-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="180" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

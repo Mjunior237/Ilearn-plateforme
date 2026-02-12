@@ -1,0 +1,109 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="F7rk43qCH2CcVgYosyiy">
+    <mxGraphModel dx="1290" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-65" value="Admin" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-66" value="Frontend" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-67" value="Backend" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-68" value="Multer" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-69" value="Database" style="shape=umlLifeline" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-70" value="1. Sélectionne fichier" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-65" target="HjlKDKbBcU_3jiboQGwx-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-71" value="2. Remplit formulaire" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-65" target="HjlKDKbBcU_3jiboQGwx-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-72" value="3. Clique Upload" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-65" target="HjlKDKbBcU_3jiboQGwx-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-73" value="4. POST /api/resources/upload" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-66" target="HjlKDKbBcU_3jiboQGwx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="80" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-74" value="5. Vérifie token JWT" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="220" as="sourcePoint" />
+            <mxPoint x="410" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-75" value="6. Vérifie rôle ADMIN" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="280" as="sourcePoint" />
+            <mxPoint x="410" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-76" value="7. upload.single(&#39;file&#39;)" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-67" target="HjlKDKbBcU_3jiboQGwx-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="100" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-77" value="8. Sauvegarde fichier" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-68" target="HjlKDKbBcU_3jiboQGwx-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="180" as="sourcePoint" />
+            <mxPoint x="570" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-78" value="9. Retourne filePath" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-68" target="HjlKDKbBcU_3jiboQGwx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="120" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-79" value="10. INSERT INTO resources" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-67" target="HjlKDKbBcU_3jiboQGwx-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="140" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-80" value="11. Retourne ID" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-69" target="HjlKDKbBcU_3jiboQGwx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="160" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-81" value="12. SELECT * FROM resources" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-67" target="HjlKDKbBcU_3jiboQGwx-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="180" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-82" value="13. Retourne ressource" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-69" target="HjlKDKbBcU_3jiboQGwx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="200" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-83" value="14. 201 Created" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-67" target="HjlKDKbBcU_3jiboQGwx-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="220" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-84" value="15. Affiche succès" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-66" target="HjlKDKbBcU_3jiboQGwx-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="240" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HjlKDKbBcU_3jiboQGwx-85" value="16. Rafraîchit liste" style="edgeStyle=elbowEdgeStyle;html=1;" edge="1" parent="1" source="HjlKDKbBcU_3jiboQGwx-66" target="HjlKDKbBcU_3jiboQGwx-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="360" as="sourcePoint" />
+            <mxPoint x="250" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
